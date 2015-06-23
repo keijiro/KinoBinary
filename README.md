@@ -3,7 +3,7 @@ BinaryImager
 
 1-bit monochrome image effect for Unity
 
-![screenshot](http://40.media.tumblr.com/fc1ab26aac0095abc5428de802a008f8/tumblr_nqei6mgbsn1qio469o1_1280.png)
+![screenshot](http://33.media.tumblr.com/1134467d0b86300a4f3b49f10e5445df/tumblr_nqej0zfrPt1qio469o1_400.gif)
 
 License
 -------
