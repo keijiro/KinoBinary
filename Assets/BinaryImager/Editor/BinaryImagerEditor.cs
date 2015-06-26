@@ -31,6 +31,8 @@ public class BinaryImagerEditor : Editor
     SerializedProperty _ditherScale;
     SerializedProperty _color0;
     SerializedProperty _color1;
+    SerializedProperty _blendMode;
+    SerializedProperty _blendFactor;
 
     static GUIContent _textColor0 = new GUIContent("Color (dark)");
     static GUIContent _textColor1 = new GUIContent("Color (light)");
@@ -41,6 +43,8 @@ public class BinaryImagerEditor : Editor
         _ditherScale  = serializedObject.FindProperty("_ditherScale");
         _color0       = serializedObject.FindProperty("_color0");
         _color1       = serializedObject.FindProperty("_color1");
+        _blendMode    = serializedObject.FindProperty("_blendMode");
+        _blendFactor  = serializedObject.FindProperty("_blendFactor");
     }
 
     public override void OnInspectorGUI()
@@ -51,6 +55,8 @@ public class BinaryImagerEditor : Editor
         EditorGUILayout.PropertyField(_ditherScale);
         EditorGUILayout.PropertyField(_color0, _textColor0);
         EditorGUILayout.PropertyField(_color1, _textColor1);
+        EditorGUILayout.PropertyField(_blendMode);
+        EditorGUILayout.PropertyField(_blendFactor);
 
         serializedObject.ApplyModifiedProperties();
     }

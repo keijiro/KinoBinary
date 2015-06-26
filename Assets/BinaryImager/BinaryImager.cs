@@ -71,6 +71,30 @@ public class BinaryImager : MonoBehaviour
         set { _color1 = value; }
     }
 
+    // Blend mode selector
+
+    public enum BlendMode {
+        Direct, Midpoint
+    }
+
+    [SerializeField]
+    BlendMode _blendMode;
+
+    public BlendMode blendMode {
+        get { return _blendMode; }
+        set { _blendMode = value; }
+    }
+
+    // Blend factor
+
+    [SerializeField, Range(0, 1)]
+    float _blendFactor = 1.0f;
+
+    public float blendFactor {
+        get { return _blendFactor; }
+        set { _blendFactor = value; }
+    }
+
     #endregion
 
     #region Private Resources
@@ -105,10 +129,16 @@ public class BinaryImager : MonoBehaviour
             _material.hideFlags = HideFlags.DontSave;
         }
 
+        if (_blendMode == BlendMode.Midpoint)
+            _material.EnableKeyword("BLEND_MIDPOINT");
+        else
+            _material.DisableKeyword("BLEND_MIDPOINT");
+
         _material.SetTexture("_DitherTex", DitherMatrixTexture);
         _material.SetFloat("_DitherScale", _ditherScale);
         _material.SetColor("_Color0", _color0);
         _material.SetColor("_Color1", _color1);
+        _material.SetFloat("_BlendFactor", _blendFactor);
 
         Graphics.Blit(source, destination, _material);
     }
