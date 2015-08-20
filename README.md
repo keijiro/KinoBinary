@@ -1,5 +1,5 @@
-BinaryImager
-============
+KinoBinary
+==========
 
 1-bit monochrome image effect for Unity
 

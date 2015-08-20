@@ -1,5 +1,5 @@
 ﻿//
-// BinaryImager - 1-bit monochrome image effect
+// KinoBinary - 1-bit monochrome image effect
 //
 // Copyright (C) 2015 Keijiro Takahashi
 //
@@ -20,7 +20,7 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-Shader "Hidden/BinaryImager"
+Shader "Hidden/Kino/Binary"
 {
     Properties
     {

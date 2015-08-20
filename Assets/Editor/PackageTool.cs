@@ -6,6 +6,6 @@ public class PackageTool
     [MenuItem("Package/Update Package")]
     static void UpdatePackage()
     {
-        AssetDatabase.ExportPackage("Assets/BinaryImager", "BinaryImager.unitypackage", ExportPackageOptions.Recurse);
+        AssetDatabase.ExportPackage("Assets/Kino", "KinoBinary.unitypackage", ExportPackageOptions.Recurse);
     }
 }
