@@ -1,5 +1,5 @@
-KinoBinary
-==========
+Binary
+======
 
 **Binary** is a binary image (thresholding) filter for Unity.
 
