@@ -14,7 +14,7 @@ namespace Kino
 
         // Dither type selector
         public enum DitherType {
-            Bayer2x2, Bayer3x3, Bayer4x4, Bayer8x8
+            Bayer2x2, Bayer3x3, Bayer4x4, Bayer8x8, BlueNoise64x64
         };
 
         [SerializeField] DitherType _ditherType;
@@ -66,6 +66,7 @@ namespace Kino
         [SerializeField, HideInInspector] Texture2D _bayer3x3Texture;
         [SerializeField, HideInInspector] Texture2D _bayer4x4Texture;
         [SerializeField, HideInInspector] Texture2D _bayer8x8Texture;
+        [SerializeField, HideInInspector] Texture2D _bnoise64x64Texture;
 
         Texture2D DitherTexture {
             get {
@@ -73,7 +74,8 @@ namespace Kino
                     case DitherType.Bayer2x2: return _bayer2x2Texture;
                     case DitherType.Bayer3x3: return _bayer3x3Texture;
                     case DitherType.Bayer4x4: return _bayer4x4Texture;
-                    default: return _bayer8x8Texture;
+                    case DitherType.Bayer8x8: return _bayer8x8Texture;
+                    default: return _bnoise64x64Texture;
                 }
             }
         }

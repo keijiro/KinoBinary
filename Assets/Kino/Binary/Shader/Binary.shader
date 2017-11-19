@@ -34,7 +34,7 @@ Shader "Hidden/Kino/Binary"
         // Dither pattern sample
         float2 dither_uv = i.uv * _DitherTex_TexelSize;
         dither_uv /= _MainTex_TexelSize * _Scale;
-        half dither = tex2D(_DitherTex, dither_uv).a;
+        half dither = tex2D(_DitherTex, dither_uv).a + 0.5 / 256;
 
         // Relative luminance in linear RGB space
     #ifdef UNITY_COLORSPACE_GAMMA

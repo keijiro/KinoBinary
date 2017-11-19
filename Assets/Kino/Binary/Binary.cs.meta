@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 801e272fe799a4b1285b38cce9afa88d
-timeCreated: 1511095976
+timeCreated: 1511097351
 licenseType: Pro
 MonoImporter:
   externalObjects: {}
@@ -11,6 +11,8 @@ MonoImporter:
   - _bayer3x3Texture: {fileID: 2800000, guid: 4e6a0989f51fc3e4b9d7e4672a8773e2, type: 3}
   - _bayer4x4Texture: {fileID: 2800000, guid: 02f08b81840613743af82abd42eaee73, type: 3}
   - _bayer8x8Texture: {fileID: 2800000, guid: 0c5cd497bd4622146b2e8dbfce741e45, type: 3}
+  - _bnoise64x64Texture: {fileID: 2800000, guid: ca7314b6987d41242915962b33440b3b,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
