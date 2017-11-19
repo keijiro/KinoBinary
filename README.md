@@ -1,28 +1,27 @@
 KinoBinary
 ==========
 
-1-bit monochrome image effect for Unity
+**Binary** is a binary image (thresholding) filter for Unity.
 
-![screenshot](http://33.media.tumblr.com/1134467d0b86300a4f3b49f10e5445df/tumblr_nqej0zfrPt1qio469o1_400.gif)
+![gif](https://i.imgur.com/BbifRe5.gif)
+
+Installation
+------------
+
+Download one of the unitypackage files from the [Releases] page and import it
+to the project.
+
+[Releases]: https://github.com/keijiro/KinoBinary/releases
+
+Acknowledgement
+---------------
+
+Blue noise textures used in Binary are created by Christoph Peters. See the
+[blog post] for further details.
+
+[blog post]: http://momentsingraphics.de/?p=127
 
 License
 -------
 
-Copyright (C) 2015 Keijiro Takahashi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[MIT](LICENSE.txt)
