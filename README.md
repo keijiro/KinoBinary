@@ -16,8 +16,8 @@ to the project.
 Acknowledgement
 ---------------
 
-Blue noise textures used in Binary are created by Christoph Peters. See the
-[blog post] for further details.
+The blue noise texture files used in Binary are created by Christoph Peters.
+See the [blog post] for further details.
 
 [blog post]: http://momentsingraphics.de/?p=127
 
